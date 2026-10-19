@@ -1,0 +1,715 @@
+{
+ "praxis-hallenbad-amras": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1920,
+  "alt": "Das Städtische Hallenbad Amras in Innsbruck mit der Nordkette im Hintergrund – hier befindet sich die Praxis P.H.I.T im 1. Stock",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "Real-ESRGAN x4plus"
+ },
+ "beckenboden-behandlung": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1709,
+  "alt": "Therapeutin legt die Hände behutsam an Becken und Hüfte einer Patientin",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "Fallback: Lanczos + Nachschärfen (Real-ESRGAN erzeugte Stoff-Artefakte)"
+ },
+ "beckenboden-huefte": {
+  "widths": [
+   640,
+   1024,
+   1067
+  ],
+  "width": 1067,
+  "height": 1600,
+  "alt": "Behandlung von Hüfte und Becken in Seitenlage",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "kein Upscaling nötig (Original 1067×1600)"
+ },
+ "therapie-nacken": {
+  "widths": [
+   640,
+   1024,
+   1067
+  ],
+  "width": 1067,
+  "height": 1600,
+  "alt": "Manuelle Therapie an der Halswirbelsäule – Hände am Nacken einer Patientin",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "kein Upscaling nötig (Original 1067×1600)"
+ },
+ "therapie-knie": {
+  "widths": [
+   640,
+   1024,
+   1067
+  ],
+  "width": 1067,
+  "height": 1599,
+  "alt": "Mobilisation des Kniegelenks auf der Behandlungsliege",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "kein Upscaling nötig (Original 1067×1600)"
+ },
+ "trainingsraum-phit": {
+  "widths": [
+   640,
+   1024,
+   1600
+  ],
+  "width": 1600,
+  "height": 908,
+  "alt": "Der helle, 160 m² große Trainingsbereich von P.H.I.T mit Rundbogenfenstern, Kraftgeräten und Matten",
+  "source": "P.H.I.T (phit.cc)",
+  "upscale": "Real-ESRGAN x4plus (Original nur 717 px), Ausgabe auf max. 1600 px begrenzt"
+ },
+ "team-anna-gassner": {
+  "widths": [
+   640,
+   960
+  ],
+  "width": 960,
+  "height": 1200,
+  "alt": "Porträt von Anna Gassner, MSc, Physiotherapeutin",
+  "source": "P.H.I.T (phit.cc) – echtes Porträt",
+  "upscale": "kein Upscaling nötig (Original ≥ 1856 px), einheitlich 4:5 zugeschnitten + Weißabgleich angeglichen"
+ },
+ "team-armin-hauser": {
+  "widths": [
+   640,
+   960
+  ],
+  "width": 960,
+  "height": 1200,
+  "alt": "Porträt von Armin Hauser, Physiotherapeut",
+  "source": "P.H.I.T (phit.cc) – echtes Porträt",
+  "upscale": "kein Upscaling nötig (Original ≥ 1856 px), einheitlich 4:5 zugeschnitten + Weißabgleich angeglichen"
+ },
+ "team-simon-klein": {
+  "widths": [
+   640,
+   960
+  ],
+  "width": 960,
+  "height": 1200,
+  "alt": "Porträt von Simon Klein, Physiotherapeut",
+  "source": "P.H.I.T (phit.cc) – echtes Porträt",
+  "upscale": "kein Upscaling nötig (Original ≥ 1856 px), einheitlich 4:5 zugeschnitten + Weißabgleich angeglichen"
+ },
+ "team-simon-braun": {
+  "widths": [
+   640,
+   960
+  ],
+  "width": 960,
+  "height": 1200,
+  "alt": "Porträt von Simon Braun, Physiotherapeut",
+  "source": "P.H.I.T (phit.cc) – echtes Porträt",
+  "upscale": "kein Upscaling nötig (Original ≥ 1856 px), einheitlich 4:5 zugeschnitten + Weißabgleich angeglichen"
+ },
+ "physio-knie-mobilisation": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1708,
+  "alt": "Physiotherapeut mobilisiert das Knie eines liegenden Patienten",
+  "source": "Unsplash",
+  "photographer": "yury kirillov",
+  "handle": "relievemassage",
+  "url": "https://unsplash.com/photos/pbUWW-CBoqY",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "physio-manuelle-therapie-ruecken": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Therapeut behandelt Schulter und Rücken einer Patientin in Seitenlage",
+  "source": "Unsplash",
+  "photographer": "Marc Zeman",
+  "handle": "der_zeman",
+  "url": "https://unsplash.com/photos/uLWW09LLG04",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "haende-manuelle-therapie": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Nahaufnahme: Hände bei der manuellen Therapie an der Schulter",
+  "source": "Unsplash",
+  "photographer": "Toa Heftiba",
+  "handle": "heftiba",
+  "url": "https://unsplash.com/photos/hBLf2nvp-Yc",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "haende-ruecken-behandlung": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1709,
+  "alt": "Hände eines Therapeuten auf dem oberen Rücken einer entspannt liegenden Patientin",
+  "source": "Unsplash",
+  "photographer": "Edward Muntinga",
+  "handle": "edwardmuntinga",
+  "url": "https://unsplash.com/photos/vKbG-Ab-OuY",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "hand-ruecken-ruhig": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Eine Hand ruht ruhig auf dem unteren Rücken – Behandlung in entspannter Atmosphäre",
+  "source": "Unsplash",
+  "photographer": "Paige Madison",
+  "handle": "paigecowen",
+  "url": "https://unsplash.com/photos/0d6R1iCh1SE",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "haende-warm": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Zwei Hände liegen flach auf einem Rücken",
+  "source": "Unsplash",
+  "photographer": "Benjamin Wedemeyer",
+  "handle": "benjaminwedemeyer",
+  "url": "https://unsplash.com/photos/pN140LY8wn8",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "training-hanteln-begleitet": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Therapeut begleitet eine Patientin bei Übungen mit leichten Hanteln",
+  "source": "Unsplash",
+  "photographer": "Sincerely Media",
+  "handle": "sincerelymedia",
+  "url": "https://unsplash.com/photos/inoZpsBQRqk",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "training-kraft-coaching": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Trainerin und Trainer bei einer Kraftübung mit Kurzhanteln",
+  "source": "Unsplash",
+  "photographer": "maxhome fitness",
+  "handle": "maxhomefitness_9252382_sink",
+  "url": "https://unsplash.com/photos/wSUlQl8HPYc",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "training-geraete-betreuung": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Betreutes Training an Kraftgeräten",
+  "source": "Unsplash",
+  "photographer": "Sergio Kian",
+  "handle": "sergiokian",
+  "url": "https://unsplash.com/photos/G6svDyPVRrc",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "trainingsraum-licht": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Heller Trainingsraum mit Kraftstationen",
+  "source": "Unsplash",
+  "photographer": "Sam Moghadam",
+  "handle": "sammoghadam",
+  "url": "https://unsplash.com/photos/Z4Q9KHw9ofE",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "wasser-bahnen": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Blaues Schwimmbeckenwasser mit Bahnlinien von oben",
+  "source": "Unsplash",
+  "photographer": "Thomas Park",
+  "handle": "thomascpark",
+  "url": "https://unsplash.com/photos/QGdRrty4054",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "hallenbad-ruhig": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1920,
+  "alt": "Ruhiges, klares Wasser in einem Hallenbad",
+  "source": "Unsplash",
+  "photographer": "Sandeep Vattapparambil",
+  "handle": "sandeepv",
+  "url": "https://unsplash.com/photos/f8Y0qiwCbDA",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "schwimmer-unterwasser": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Person gleitet ruhig durch türkisfarbenes Wasser",
+  "source": "Unsplash",
+  "photographer": "Antonio Araujo",
+  "handle": "antonioaaaraujo",
+  "url": "https://unsplash.com/photos/CgpPxTGLfwU",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "laeufer-bahn": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Läufer auf einer roten Tartanbahn im Sonnenlicht",
+  "source": "Unsplash",
+  "photographer": "Hannah Coleman",
+  "handle": "hvcoleman91",
+  "url": "https://unsplash.com/photos/UFs5bKHgo4U",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "laeufer-beine-dynamik": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Laufende Beine in dynamischer Bewegungsunschärfe",
+  "source": "Unsplash",
+  "photographer": "Felix yu",
+  "handle": "qixna",
+  "url": "https://unsplash.com/photos/9orpQvNujSM",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "laufbahn-stretch": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Läufer dehnt sich auf einer Laufbahn",
+  "source": "Unsplash",
+  "photographer": "Philip Strong",
+  "handle": "strong18philip",
+  "url": "https://unsplash.com/photos/SQvRd2EVqLM",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "innsbruck-inn-nordkette": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Die bunten Häuser am Inn in Innsbruck vor der verschneiten Nordkette",
+  "source": "Unsplash",
+  "photographer": "Nk Ni",
+  "handle": "nkhasebe",
+  "url": "https://unsplash.com/photos/5hdZxTKc7mc",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "innsbruck-altstadt-berge": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Innsbrucker Häuserzeile mit Bergen im Hintergrund",
+  "source": "Unsplash",
+  "photographer": "Nk Ni",
+  "handle": "nkhasebe",
+  "url": "https://unsplash.com/photos/PP5DpAjhkf0",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "inntal-panorama": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Panorama des Inntals mit schneebedeckten Gipfeln",
+  "source": "Unsplash",
+  "photographer": "Nk Ni",
+  "handle": "nkhasebe",
+  "url": "https://unsplash.com/photos/7He_VU4SH30",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "nordkette-silhouette": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Silhouette der Bergkette im Abendlicht",
+  "source": "Unsplash",
+  "photographer": "Nk Ni",
+  "handle": "nkhasebe",
+  "url": "https://unsplash.com/photos/G4WpPq5L_b0",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "nordkette-abendlicht": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1920,
+  "alt": "Bergkette im goldenen Abendlicht",
+  "source": "Unsplash",
+  "photographer": "Joanna Joy",
+  "handle": "joannajoy_",
+  "url": "https://unsplash.com/photos/5zTlCWBTzho",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "skitour-aufstieg": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Skitourengeher beim Aufstieg im Tiefschnee",
+  "source": "Unsplash",
+  "photographer": "Johannes Andersson",
+  "handle": "thejoltjoker",
+  "url": "https://unsplash.com/photos/pmtllkyavOk",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "skitour-daemmerung": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Skitourengeher auf einem Grat in der Dämmerung",
+  "source": "Unsplash",
+  "photographer": "Matthew Stephenson",
+  "handle": "matthewryanstephenson",
+  "url": "https://unsplash.com/photos/BX4TuAYlohc",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "skitour-gegenlicht": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Gruppe von Skitourengehern im Gegenlicht auf einem Gipfelplateau",
+  "source": "Unsplash",
+  "photographer": "Joris Berthelot",
+  "handle": "eexit",
+  "url": "https://unsplash.com/photos/EnTU_hr9wPA",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "trailrunning-wiese": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1709,
+  "alt": "Trailrunner auf einem Bergrücken über dem Nebel",
+  "source": "Unsplash",
+  "photographer": "Alessio Soggetti",
+  "handle": "asoggetti",
+  "url": "https://unsplash.com/photos/GYr9A2CPMhY",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "trailrunning-beine": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Trailrunning-Schuhe auf einem Bergpfad",
+  "source": "Unsplash",
+  "photographer": "Audrey Langlois",
+  "handle": "fossette_audrey",
+  "url": "https://unsplash.com/photos/xtZc0f1wt4Y",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "trailrunning-gipfel": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1708,
+  "alt": "Trailrunner auf einem felsigen Gipfel über den Wolken",
+  "source": "Unsplash",
+  "photographer": "Alban ROZES",
+  "handle": "h3reux",
+  "url": "https://unsplash.com/photos/DhGC1dVw0Tg",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "klettern-grat": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Kletterer an einem Felsgrat über dem Wolkenmeer",
+  "source": "Unsplash",
+  "photographer": "Jef Willemyns",
+  "handle": "jefwillemyns",
+  "url": "https://unsplash.com/photos/mluUYXoTotY",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "klettern-fels": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1703,
+  "alt": "Kletterin an einer steilen Felsnadel",
+  "source": "Unsplash",
+  "photographer": "Maxime Gilbert",
+  "handle": "mxm_gilbert",
+  "url": "https://unsplash.com/photos/LxwlUczYduM",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "wasser-textur-licht": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Lichtreflexe auf klarem Wasser",
+  "source": "Unsplash",
+  "photographer": "Chris Lawton",
+  "handle": "chrislawton",
+  "url": "https://unsplash.com/photos/3Ik7xWYJv3U",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "wasser-tropfen": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1696,
+  "alt": "Wassertropfen erzeugt konzentrische Wellen",
+  "source": "Unsplash",
+  "photographer": "Terry Vlisidis",
+  "handle": "vlisidis",
+  "url": "https://unsplash.com/photos/SFEvfN01-ao",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "wasser-unterwasser": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Wasseroberfläche mit Luftblasen, halb unter Wasser fotografiert",
+  "source": "Unsplash",
+  "photographer": "Ryan Loughlin",
+  "handle": "rylo444",
+  "url": "https://unsplash.com/photos/-a8Cewc-qGQ",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "knie-haende": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Person hält ihr Knie mit beiden Händen",
+  "source": "Unsplash",
+  "photographer": "Kat Kelley",
+  "handle": "katkelley",
+  "url": "https://unsplash.com/photos/L9RHX9xwbno",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "knie-sitzend": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1707,
+  "alt": "Sitzende Person umfasst ihr Knie",
+  "source": "Unsplash",
+  "photographer": "Margo Evardson",
+  "handle": "stadinstudio",
+  "url": "https://unsplash.com/photos/ZSKxQlX6--k",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ },
+ "behandlungsraum": {
+  "widths": [
+   640,
+   1024,
+   1600,
+   2560
+  ],
+  "width": 2560,
+  "height": 1920,
+  "alt": "Ruhiger, heller Behandlungsraum mit Liege",
+  "source": "Unsplash",
+  "photographer": "Kimiya Sabbaghan",
+  "handle": "k_sabbaghan",
+  "url": "https://unsplash.com/photos/o4OJfrmMC0o",
+  "license": "Unsplash License",
+  "upscale": "kein Upscaling nötig (Original ≥ 3000 px)"
+ }
+}

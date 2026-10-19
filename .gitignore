@@ -1,0 +1,5 @@
+_tmp/
+.playwright-mcp/
+assets/img/_original/
+phit-masterprompt-claude-code.md
+*.log
