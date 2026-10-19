@@ -42,6 +42,9 @@ ul.kw li{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
 .btn:hover{background:var(--cyan);color:var(--ink);border-color:var(--cyan)}
 .swatch{display:flex;gap:4px}.swatch i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+.card.final{display:grid;grid-template-columns:1fr;border-color:var(--ink)}
+@media (min-width:900px){.card.final{grid-template-columns:1.25fr 1fr}.card.final .shot{aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}.card.final .body{padding:40px}}
+.card.final h2{font-size:clamp(1.8rem,3vw,2.4rem)}
 .series{margin-bottom:clamp(40px,6vw,72px)}
 .series .tag{display:block;margin-bottom:10px}
 .series-title{font-size:clamp(1.6rem,3.2vw,2.5rem);letter-spacing:-.025em;line-height:1.1;max-width:24ch}
@@ -61,6 +64,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px}
   </div>
 </header>
 <main>
+  <section class="wrap series" aria-labelledby="final-title">
+    <p class="tag">Finale Version · Basis Klinik 1 „Referenz“</p>
+    <article class="card final">
+      <div class="shot"><img src="assets/previews/final.webp" width="1440" height="900" alt="Vorschau der finalen P.H.I.T-Website"></div>
+      <div class="body"><span class="num">FINAL · LIVEFÄHIG</span><h2 id="final-title">Die neue P.H.I.T-Website</h2>
+        <p>Klinik 1 „Referenz“, fertig für die Produktion: Lighthouse Mobile 96–97 bei Performance, je 100 bei Barrierefreiheit, Best Practices und SEO. Am Desktop volle Motion, am Handy leicht und schnell. Mit Sitemap, Favicons, 404-Seite, <code>.htaccess</code> und Übergabe-README.</p>
+        <ul class="kw"><li>übergabefertig</li><li>Lighthouse 96+</li><li>eigenständiger Ordner</li></ul>
+        <div class="links"><a class="btn" href="final/index.html">Ansehen →</a><a class="btn ghost" href="final/beckenboden.html">Beckenboden</a><a class="btn ghost" href="https://github.com/LeonTheGoatRohrer/phit-website-entwuerfe/tree/main/final">Code &amp; README</a></div></div>
+    </article>
+  </section>
   <section class="wrap series" aria-labelledby="serie-klinik">
     <p class="tag">Runde 2 · Weiterentwicklung von „Klinik“</p>
     <h2 id="serie-klinik" class="series-title">Klinik-Serie: fünf Ausarbeitungen mit Motion Design</h2>

@@ -1,0 +1,90 @@
+# ==========================================================================
+# P.H.I.T – .htaccess (Vorlage für Apache-Webspace, liegt im Web-Root)
+# Jeder Block ist mit <IfModule> abgesichert: fehlt ein Modul beim Hoster,
+# wird der Block ignoriert statt einen 500er auszulösen.
+# Erklärung: README.md, Abschnitt „Deployment“.
+# ==========================================================================
+
+# --- 1. Fehlerseite --------------------------------------------------------
+ErrorDocument 404 /404.html
+
+# --- 2. HTTPS + www erzwingen (erst aktivieren, wenn das Zertifikat läuft) --
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} !=on [OR]
+#   RewriteCond %{HTTP_HOST} !^www\. [NC]
+#   RewriteRule ^ https://www.phit.cc%{REQUEST_URI} [L,R=301]
+#   # /index.html -> / (eine kanonische Startseiten-URL)
+#   RewriteCond %{THE_REQUEST} \s/index\.html[\s?] [NC]
+#   RewriteRule ^index\.html$ / [L,R=301]
+# </IfModule>
+
+# --- 3. Zeichensatz & Typen ------------------------------------------------
+AddDefaultCharset utf-8
+<IfModule mod_mime.c>
+  AddCharset utf-8 .html .css .js .json .xml .txt .svg .webmanifest
+  AddType application/manifest+json .webmanifest
+  AddType image/webp .webp
+  AddType image/svg+xml .svg
+  AddType font/woff2 .woff2
+</IfModule>
+
+# --- 4. Kompression (Brotli bevorzugt, sonst gzip) -------------------------
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css text/plain text/xml application/javascript text/javascript application/json application/manifest+json application/xml image/svg+xml image/x-icon
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript text/javascript application/json application/manifest+json application/xml image/svg+xml image/x-icon
+</IfModule>
+
+# --- 5. Caching ------------------------------------------------------------
+# Bilder, Fonts, Icons, Vendor-Skripte: 1 Jahr, unveränderlich.
+#   -> Wird ein Bild ersetzt, bitte unter NEUEM Dateinamen ablegen (z. B. -v2).
+# CSS/JS (style.min.css, main.min.js): 1 Woche – Änderungen kommen spätestens dann an
+#   (für sofortige Wirkung den Link im HTML mit ?v=2 versehen).
+# HTML, Manifest, robots/sitemap: immer neu prüfen (no-cache = mit ETag revalidieren).
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:webp|jpe?g|png|gif|svg|ico|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "^(?:gsap|ScrollTrigger|SplitText|lenis)\.min\.js$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "^(?:style\.min\.css|main\.min\.js|style\.css|main\.js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(?:html|webmanifest|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # favicon.svg/.ico liegen im Root und ändern sich selten – 1 Woche statt 1 Jahr
+  <FilesMatch "^(?:favicon\.svg|favicon\.ico|apple-touch-icon\.png)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # --- 6. Sicherheits-Header (unkritisch für statische Seiten) ------------
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+  # Nach erfolgreicher HTTPS-Umstellung aktivieren:
+  # Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 week"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# --- 7. Interne Dateien nicht ausliefern -----------------------------------
+<FilesMatch "^(?:README\.md|CREDITS\.md)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>
+# Verzeichnislisten abschalten (manche Hoster verbieten „Options“ in .htaccess -> dann 500er; daher optional):
+# Options -Indexes

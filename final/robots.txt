@@ -1,0 +1,5 @@
+# P.H.I.T – www.phit.cc
+User-agent: *
+Allow: /
+
+Sitemap: https://www.phit.cc/sitemap.xml

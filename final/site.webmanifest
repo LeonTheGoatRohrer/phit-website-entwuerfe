@@ -1,0 +1,17 @@
+{
+  "name": "P.H.I.T – Physiotherapie und individuelles Training",
+  "short_name": "P.H.I.T",
+  "description": "Physiotherapie in Innsbruck im Hallenbad Amras",
+  "lang": "de-AT",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#0A6A7E",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
