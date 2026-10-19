@@ -148,10 +148,17 @@
     start: M.start,
     once: true,
     onEnter: function (batch) {
-      willChange(batch, 'transform, opacity');
-      gsap.to(batch, {
-        autoAlpha: 1, y: 0, duration: M.dur.m, ease: M.ease.out, stagger: M.stagger, overwrite: true,
-        onComplete: function () { gsap.set(batch, { clearProps: 'transform,willChange' }); }
+      // beim schnellen Springen (Anker, Lenis) nicht alles nacheinander staffeln:
+      // bereits passierte Elemente sofort zeigen, nur sichtbare Elemente kurz gestaffelt einblenden
+      var inView = [], passed = [];
+      batch.forEach(function (el) { (el.getBoundingClientRect().bottom < 0 ? passed : inView).push(el); });
+      if (passed.length) gsap.set(passed, { autoAlpha: 1, y: 0, clearProps: 'transform' });
+      if (!inView.length) return;
+      willChange(inView, 'transform, opacity');
+      gsap.to(inView, {
+        autoAlpha: 1, y: 0, duration: M.dur.m, ease: M.ease.out, overwrite: true,
+        stagger: Math.min(M.stagger, 0.48 / inView.length),
+        onComplete: function () { gsap.set(inView, { clearProps: 'transform,willChange' }); }
       });
     }
   });
