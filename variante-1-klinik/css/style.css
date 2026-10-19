@@ -75,6 +75,11 @@ dl, dd { margin: 0; }
 address { font-style: normal; }
 button { font: inherit; color: inherit; }
 .num, .tabular { font-variant-numeric: tabular-nums; }
+/* Icon-Sprite */
+svg.i { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; flex: none; overflow: visible; }
+svg.i2 { stroke-width: 2; }
+svg.i18 { stroke-width: 1.8; }
+svg.if { fill: currentColor; stroke: none; }
 
 :focus-visible { outline: 3px solid var(--petrol); outline-offset: 3px; border-radius: 3px; }
 .on-dark :focus-visible, .site-footer :focus-visible { outline-color: var(--cyan); }
@@ -143,6 +148,9 @@ button { font: inherit; color: inherit; }
 .btn-num { font-weight: 500; opacity: .9; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .hero-grid > *, .split > *, .page-hero-grid > *, .location > *, .career > *, .contact > *, .faq-layout > *, .services-layout > *, .profile > *, .legal > * { min-width: 0; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px 14px; }
+.btn { flex-wrap: wrap; row-gap: 0; }
+.btn-label { white-space: nowrap; }
+@media (max-width: 479px) { .btn { padding: 4px 18px; gap: 0 10px; } .hero .btn-row .btn, .page-hero .btn-row .btn:first-child { width: 100%; } }
 
 .link-arrow {
   display: inline-flex; align-items: center; gap: 10px; font-weight: 600; text-decoration: none;
@@ -260,7 +268,7 @@ body.menu-open { overflow: hidden; }
 .plate-head strong { font-size: .875rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; }
 .plate-head span { font-size: .875rem; color: var(--muted); font-weight: 500; white-space: nowrap; }
 .plate ul li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); }
-.plate ul li span:first-child { font-weight: 600; font-size: 1rem; }
+.plate ul li span:first-child { font-weight: 600; font-size: 1rem; white-space: nowrap; }
 .plate ul li span:last-child { font-size: .875rem; color: var(--muted); text-align: right; }
 .plate-foot { display: flex; align-items: center; gap: 10px; padding-top: 12px; font-size: .875rem; color: var(--muted); }
 .plate-foot svg { width: 18px; height: 18px; color: var(--petrol); flex: none; }
@@ -268,9 +276,9 @@ body.menu-open { overflow: hidden; }
 @media (min-width: 640px) { .plate { margin: -72px 28px 0 auto; max-width: 420px; } }
 @media (min-width: 1024px) {
   .hero-grid { grid-template-columns: minmax(0, 640px) minmax(0, 1fr); gap: 88px; align-items: center; }
-  .hero-photo { aspect-ratio: 4 / 4.6; }
-  .hero-photo img { object-position: 50% 50%; }
-  .plate { position: absolute; left: -40px; bottom: -36px; margin: 0; width: 340px; }
+  .hero-photo { aspect-ratio: 4 / 5.2; }
+  .hero-photo img { object-position: 50% 55%; }
+  .plate { position: absolute; left: -40px; top: 56px; margin: 0; width: 340px; }
 }
 @media (min-width: 1280px) { .plate { left: -48px; width: 360px; } }
 
@@ -302,7 +310,7 @@ body.menu-open { overflow: hidden; }
 /* ---------- Leistungen ---------- */
 .services-layout { display: grid; gap: 48px; }
 @media (min-width: 1024px) {
-  .services-layout { grid-template-columns: 340px minmax(0, 1fr); gap: 72px; }
+  .services-layout { grid-template-columns: 360px minmax(0, 1fr); gap: 72px; }
   .services-intro { position: sticky; top: calc(var(--header-h) + 40px); align-self: start; }
 }
 .services-intro h2 { font-size: var(--fs-h2); }
@@ -333,9 +341,10 @@ body.menu-open { overflow: hidden; }
 .service--link h3 a::after { content: ""; position: absolute; inset: 0; }
 .service--link h3 a:focus-visible { outline: none; }
 .service--link:has(a:focus-visible) { outline: 3px solid var(--petrol); outline-offset: 4px; border-radius: 4px; }
-.service--link h3 .arrow { display: inline-block; width: 18px; height: 18px; vertical-align: -2px; margin-left: 6px; color: var(--petrol); transition: transform .2s var(--ease); }
 .service--link:hover h3 { color: var(--petrol); }
-.service--link:hover h3 .arrow { transform: translateX(3px); }
+.service .service-more { grid-column: 2; margin-top: 12px; display: inline-flex; align-items: center; gap: 8px; color: var(--petrol); font-weight: 600; font-size: 1rem; }
+.service-more .arrow { width: 18px; height: 18px; transition: transform .2s var(--ease); }
+.service--link:hover .service-more .arrow { transform: translateX(3px); }
 
 /* ---------- Split (image + content) ---------- */
 .split { display: grid; gap: 40px; align-items: center; }
@@ -401,7 +410,7 @@ body.menu-open { overflow: hidden; }
 
 /* ---------- Ablauf (process) ---------- */
 .steps { display: grid; gap: 0; counter-reset: step; }
-.step { position: relative; display: grid; grid-template-columns: 56px 1fr; gap: 0 20px; padding-bottom: 40px; }
+.step { position: relative; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 0 20px; padding-bottom: 40px; align-content: start; }
 .step:last-child { padding-bottom: 0; }
 .step::before {
   /* connecting line */
@@ -576,7 +585,7 @@ body.menu-open { overflow: hidden; }
 .social a { width: 48px; height: 48px; border-radius: 50%; border: 1px solid rgba(255,255,255,.28); display: grid; place-items: center; }
 .social a:hover { border-color: var(--cyan); background: rgba(0,185,238,.12); }
 .social svg { width: 20px; height: 20px; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.14); padding-block: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: .9375rem; color: #9fb4bc; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.14); padding-block: 24px 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: .9375rem; color: #9fb4bc; }
 .footer-bottom ul { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 .site-footer .btn--light { color: var(--ink); text-decoration: none; }
 .site-footer .btn--light:hover { color: var(--ink); text-decoration: none; }
@@ -681,3 +690,5 @@ body.menu-open { overflow: hidden; }
 
 /* Bilder in festen Rahmen füllen */
 .hero-photo picture, .split-media picture, .room-img picture, .member-photo picture, .page-hero-media picture, .intro-photo picture { height: 100%; }
+.legal-dl > div:last-child { border-bottom: 0; }
+a[href^="tel:"] { white-space: nowrap; }
