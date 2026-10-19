@@ -42,6 +42,11 @@ ul.kw li{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
 .btn:hover{background:var(--cyan);color:var(--ink);border-color:var(--cyan)}
 .swatch{display:flex;gap:4px}.swatch i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
+.series{margin-bottom:clamp(40px,6vw,72px)}
+.series .tag{display:block;margin-bottom:10px}
+.series-title{font-size:clamp(1.6rem,3.2vw,2.5rem);letter-spacing:-.025em;line-height:1.1;max-width:24ch}
+.series .lead{margin:14px 0 clamp(24px,4vw,40px)}
+.series + .series{border-top:1px solid var(--line);padding-top:clamp(40px,6vw,72px);margin-bottom:clamp(24px,3vw,36px)}
 footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -56,6 +61,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px}
   </div>
 </header>
 <main>
+  <section class="wrap series" aria-labelledby="serie-klinik">
+    <p class="tag">Runde 2 · Weiterentwicklung von „Klinik“</p>
+    <h2 id="serie-klinik" class="series-title">Klinik-Serie: fünf Ausarbeitungen mit Motion Design</h2>
+    <p class="lead">Variante 1 „Klinik“ war der Favorit. Hier sind fünf Weiterentwicklungen mit hochwertiger, dezenter Bewegung. <strong>Klinik 1 „Referenz“</strong> ist die übergabefertige Fassung, die Varianten 2–5 sind bewusste Experimente.</p>
+    <div class="grid">
+      <article class="card"><div class="shot"><img src="assets/previews/k1.webp" width="1440" height="900" alt="Vorschau Klinik 1 Referenz" loading="lazy"></div><div class="body"><span class="num">KLINIK 01 · ÜBERGABEFERTIG</span><h2>Referenz</h2><p>Variante 1 auf Spitzenniveau: Design-System, Zeilen-Reveals, Sticky-Timeline, View Transitions und eine Übergabe-Dokumentation.</p><ul class="kw"><li>Inter</li><li>GSAP + Lenis</li><li>README</li></ul><div class="links"><a class="btn" href="klinik-1-referenz/index.html">Ansehen →</a><a class="btn ghost" href="klinik-1-referenz/beckenboden.html">Beckenboden</a></div></div></article>
+      <article class="card"><div class="shot"><img src="assets/previews/k2.webp" width="1440" height="900" alt="Vorschau Klinik 2 Präzision" loading="lazy"></div><div class="body"><span class="num">KLINIK 02 · EXPERIMENT</span><h2>Präzision</h2><p>Health-Tech-Interface: Haarlinien, anatomische Linienzeichnungen, die sich beim Scrollen zeichnen, ein Behandlungspfad als gepinntes Panel.</p><ul class="kw"><li>Geist + Mono</li><li>SVG-Anatomie</li><li>Bento-UI</li></ul><div class="links"><a class="btn" href="klinik-2-praezision/index.html">Ansehen →</a><a class="btn ghost" href="klinik-2-praezision/beckenboden.html">Beckenboden</a></div></div></article>
+      <article class="card"><div class="shot"><img src="assets/previews/k3.webp" width="1440" height="900" alt="Vorschau Klinik 3 Kinetik" loading="lazy"></div><div class="body"><span class="num">KLINIK 03 · EXPERIMENT</span><h2>Kinetik</h2><p>Bewegung als Thema: ein Hero, der zum Vollbild wächst, eine horizontale Leistungsspur, kinetische Typografie und eine Bewegungslinie durch die Seite.</p><ul class="kw"><li>Inter Tight</li><li>Scroll-Szenen</li><li>Pinning</li></ul><div class="links"><a class="btn" href="klinik-3-kinetik/index.html">Ansehen →</a><a class="btn ghost" href="klinik-3-kinetik/beckenboden.html">Beckenboden</a></div></div></article>
+      <article class="card"><div class="shot"><img src="assets/previews/k4.webp" width="1440" height="900" alt="Vorschau Klinik 4 Licht" loading="lazy"></div><div class="body"><span class="num">KLINIK 04 · EXPERIMENT</span><h2>Licht</h2><p>Klinische Klarheit trifft Wasser-Licht: dezente WebGL-Kaustiken im Hero, Lichtreflexe am Cursor und Farbverläufe zwischen den Sektionen.</p><ul class="kw"><li>Instrument Sans/Serif</li><li>WebGL-Shader</li><li>Hallenbad-USP</li></ul><div class="links"><a class="btn" href="klinik-4-licht/index.html">Ansehen →</a><a class="btn ghost" href="klinik-4-licht/beckenboden.html">Beckenboden</a></div></div></article>
+      <article class="card"><div class="shot"><img src="assets/previews/k5.webp" width="1440" height="900" alt="Vorschau Klinik 5 Szenen" loading="lazy"></div><div class="body"><span class="num">KLINIK 05 · EXPERIMENT</span><h2>Szenen</h2><p>Erzählt wie eine Apple-Produktseite: bildschirmfüllende Kapitel, Text, der sich Wort für Wort aufhellt, und eine dunkle Wasser-Szene.</p><ul class="kw"><li>Geist</li><li>Sticky-Szenen</li><li>Storytelling</li></ul><div class="links"><a class="btn" href="klinik-5-szenen/index.html">Ansehen →</a><a class="btn ghost" href="klinik-5-szenen/beckenboden.html">Beckenboden</a></div></div></article>
+    </div>
+  </section>
+  <section class="wrap series" aria-labelledby="serie-1">
+    <p class="tag">Runde 1 · Fünf Richtungen</p>
+    <h2 id="serie-1" class="series-title">Die ersten fünf Design-Richtungen</h2>
+  </section>
   <div class="wrap grid">
     <article class="card">
       <div class="shot"><img src="assets/previews/v1.webp" width="1440" height="900" alt="Vorschau Variante 1 Klinik" loading="lazy"></div>
