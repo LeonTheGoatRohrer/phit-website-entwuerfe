@@ -5,6 +5,6 @@ phit-masterprompt-claude-code.md
 *.log
 
 # Variante 6: Rohdateien der Generierung (PNG/MP4 in voller Auflösung) lokal halten
-img/gen/_src/
-video/_src/
-img/gen/_verworfen/*.png
+variante-6/img/gen/_src/
+variante-6/video/_src/
+variante-6/img/gen/_verworfen/*.png

@@ -28,7 +28,7 @@ Ein beliebiger statischer Server im **Repo-Root** (wegen `../assets/`), z. B.:
 python -m http.server 8000
 ```
 
-Danach `http://localhost:8000/` öffnen. Direktes Öffnen per `file://` funktioniert weitgehend, Videos und
+Danach `http://localhost:8000/variante-6/` öffnen. Direktes Öffnen per `file://` funktioniert weitgehend, Videos und
 Schriften laden aber je nach Browser nicht zuverlässig.
 
 ## Messwerte (lokal, 20.10.2026)
