@@ -1,138 +1,672 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>P.H.I.T Website-Entwürfe – 5 Varianten im Vergleich</title>
-<meta name="description" content="Fünf Design-Varianten für die neue Website von P.H.I.T – Physiotherapie und individuelles Training im Hallenbad Amras, Innsbruck.">
-<meta name="robots" content="noindex">
-<meta name="theme-color" content="#0b0f12">
-<link rel="icon" href="assets/logo/phit-logo.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/inter-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face{font-family:Inter;src:url(assets/fonts/inter-wght-normal.woff2) format("woff2");font-weight:100 900;font-display:swap}
-:root{--bg:#f4f4f1;--ink:#0b0f12;--muted:#5b6166;--line:#d9dad5;--cyan:#00b9ee;--card:#fff}
-*{box-sizing:border-box;margin:0}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-.wrap{max-width:1320px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}
-header{padding:clamp(28px,5vw,56px) 0 clamp(32px,5vw,64px);border-bottom:1px solid var(--line)}
-.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:clamp(40px,7vw,96px)}
-.top img{height:52px;width:auto}
-.tag{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-h1{font-size:clamp(2.2rem,6vw,5rem);line-height:1;letter-spacing:-.035em;font-weight:750;max-width:14ch}
-h1 span{background:linear-gradient(transparent 62%,var(--cyan) 62%,var(--cyan) 90%,transparent 90%)}
-.lead{margin-top:24px;max-width:60ch;font-size:clamp(1.05rem,1.6vw,1.25rem);color:var(--muted)}
-main{padding:clamp(32px,5vw,64px) 0 80px}
-.grid{display:grid;gap:clamp(20px,3vw,36px);grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s}
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(11,15,18,.35)}
-.shot{aspect-ratio:16/10;overflow:hidden;background:#e7e7e3;border-bottom:1px solid var(--line)}
-.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
-.card:hover .shot img{transform:scale(1.03)}
-.body{padding:24px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
-.num{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.06em}
-h2{font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
-.body p{color:var(--muted)}
-ul.kw{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px}
-ul.kw li{font-size:13px;border:1px solid var(--line);border-radius:99px;padding:3px 10px}
-.links{margin-top:auto;padding-top:8px;display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;padding:11px 18px;border-radius:99px;background:var(--ink);color:#fff}
-.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
-.btn:hover{background:var(--cyan);color:var(--ink);border-color:var(--cyan)}
-.swatch{display:flex;gap:4px}.swatch i{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.12)}
-.card.final{display:grid;grid-template-columns:1fr;border-color:var(--ink)}
-@media (min-width:900px){.card.final{grid-template-columns:1.25fr 1fr}.card.final .shot{aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}.card.final .body{padding:40px}}
-.card.final h2{font-size:clamp(1.8rem,3vw,2.4rem)}
-.series{margin-bottom:clamp(40px,6vw,72px)}
-.series .tag{display:block;margin-bottom:10px}
-.series-title{font-size:clamp(1.6rem,3.2vw,2.5rem);letter-spacing:-.025em;line-height:1.1;max-width:24ch}
-.series .lead{margin:14px 0 clamp(24px,4vw,40px)}
-.series + .series{border-top:1px solid var(--line);padding-top:clamp(40px,6vw,72px);margin-bottom:clamp(24px,3vw,36px)}
-footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--muted);font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physiotherapie Innsbruck | P.H.I.T im Hallenbad Amras</title>
+  <meta name="description" content="P.H.I.T – Physiotherapie und individuelles Training in Innsbruck-Amras: manuelle Therapie, Sportphysiotherapie, Beckenbodentherapie, Unterwasser- und Trainingstherapie. Termin: 0512 / 36 60 02.">
+  <meta name="theme-color" content="#0b0c0d">
+  <meta property="og:title" content="Physiotherapie Innsbruck | P.H.I.T im Hallenbad Amras">
+  <meta property="og:description" content="Vier spezialisierte Physiotherapeut:innen, 320 m² Praxis im Städtischen Hallenbad Amras, Innsbruck.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:image" content="img/gen/01-hallenbad-lichtlinie-1600.webp">
+  <link rel="icon" href="assets/logo/phit-logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":["Physiotherapy","MedicalBusiness"],"name":"P.H.I.T – Physiotherapie und individuelles Training","telephone":"+43 512 366002","email":"info@phit.cc","address":{"@type":"PostalAddress","streetAddress":"Amraser Straße 3, 1. Stock","postalCode":"6020","addressLocality":"Innsbruck","addressRegion":"Tirol","addressCountry":"AT"},"geo":{"@type":"GeoCoordinates","latitude":47.2650,"longitude":11.4029},"sameAs":["https://www.facebook.com/Phitibk","https://www.instagram.com/phit_innsbruck"],"areaServed":"Innsbruck"}</script>
 </head>
-<body>
-<header>
-  <div class="wrap">
-    <div class="top"><img src="assets/logo/phit-logo.svg" width="53" height="52" alt="P.H.I.T – Physiotherapie und individuelles Training"><span class="tag">Website-Entwürfe · Oktober 2026</span></div>
-    <h1>Fünf Wege zur neuen <span>P.H.I.T</span>-Website.</h1>
-    <p class="lead">Gleicher Inhalt, fünf eigenständige Designideen. Jede Variante ist ein vollständiger Prototyp mit Startseite, Beckenboden-Unterseite, Impressum und Datenschutz. Einfach durchklicken, auch am Handy, und die stärkste Richtung wählen.</p>
-  </div>
-</header>
-<main>
-  <section class="wrap series" aria-labelledby="final-title">
-    <p class="tag">Finale Version · Basis Klinik 1 „Referenz“</p>
-    <article class="card final">
-      <div class="shot"><img src="assets/previews/final.webp" width="1440" height="900" alt="Vorschau der finalen P.H.I.T-Website"></div>
-      <div class="body"><span class="num">FINAL · LIVEFÄHIG</span><h2 id="final-title">Die neue P.H.I.T-Website</h2>
-        <p>Klinik 1 „Referenz“, fertig für die Produktion: Lighthouse Mobile 96–97 bei Performance, je 100 bei Barrierefreiheit, Best Practices und SEO. Am Desktop volle Motion, am Handy leicht und schnell. Mit Sitemap, Favicons, 404-Seite, <code>.htaccess</code> und Übergabe-README.</p>
-        <ul class="kw"><li>übergabefertig</li><li>Lighthouse 96+</li><li>eigenständiger Ordner</li></ul>
-        <div class="links"><a class="btn" href="final/index.html">Ansehen →</a><a class="btn ghost" href="final/beckenboden.html">Beckenboden</a><a class="btn ghost" href="https://github.com/LeonTheGoatRohrer/phit-website-entwuerfe/tree/main/final">Code &amp; README</a></div></div>
-    </article>
-  </section>
-  <section class="wrap series" aria-labelledby="serie-klinik">
-    <p class="tag">Runde 2 · Weiterentwicklung von „Klinik“</p>
-    <h2 id="serie-klinik" class="series-title">Klinik-Serie: fünf Ausarbeitungen mit Motion Design</h2>
-    <p class="lead">Variante 1 „Klinik“ war der Favorit. Hier sind fünf Weiterentwicklungen mit hochwertiger, dezenter Bewegung. <strong>Klinik 1 „Referenz“</strong> ist die übergabefertige Fassung, die Varianten 2–5 sind bewusste Experimente.</p>
-    <div class="grid">
-      <article class="card"><div class="shot"><img src="assets/previews/k1.webp" width="1440" height="900" alt="Vorschau Klinik 1 Referenz" loading="lazy"></div><div class="body"><span class="num">KLINIK 01 · ÜBERGABEFERTIG</span><h2>Referenz</h2><p>Variante 1 auf Spitzenniveau: Design-System, Zeilen-Reveals, Sticky-Timeline, View Transitions und eine Übergabe-Dokumentation.</p><ul class="kw"><li>Inter</li><li>GSAP + Lenis</li><li>README</li></ul><div class="links"><a class="btn" href="klinik-1-referenz/index.html">Ansehen →</a><a class="btn ghost" href="klinik-1-referenz/beckenboden.html">Beckenboden</a></div></div></article>
-      <article class="card"><div class="shot"><img src="assets/previews/k2.webp" width="1440" height="900" alt="Vorschau Klinik 2 Präzision" loading="lazy"></div><div class="body"><span class="num">KLINIK 02 · EXPERIMENT</span><h2>Präzision</h2><p>Health-Tech-Interface: Haarlinien, anatomische Linienzeichnungen, die sich beim Scrollen zeichnen, ein Behandlungspfad als gepinntes Panel.</p><ul class="kw"><li>Geist + Mono</li><li>SVG-Anatomie</li><li>Bento-UI</li></ul><div class="links"><a class="btn" href="klinik-2-praezision/index.html">Ansehen →</a><a class="btn ghost" href="klinik-2-praezision/beckenboden.html">Beckenboden</a></div></div></article>
-      <article class="card"><div class="shot"><img src="assets/previews/k3.webp" width="1440" height="900" alt="Vorschau Klinik 3 Kinetik" loading="lazy"></div><div class="body"><span class="num">KLINIK 03 · EXPERIMENT</span><h2>Kinetik</h2><p>Bewegung als Thema: ein Hero, der zum Vollbild wächst, eine horizontale Leistungsspur, kinetische Typografie und eine Bewegungslinie durch die Seite.</p><ul class="kw"><li>Inter Tight</li><li>Scroll-Szenen</li><li>Pinning</li></ul><div class="links"><a class="btn" href="klinik-3-kinetik/index.html">Ansehen →</a><a class="btn ghost" href="klinik-3-kinetik/beckenboden.html">Beckenboden</a></div></div></article>
-      <article class="card"><div class="shot"><img src="assets/previews/k4.webp" width="1440" height="900" alt="Vorschau Klinik 4 Licht" loading="lazy"></div><div class="body"><span class="num">KLINIK 04 · EXPERIMENT</span><h2>Licht</h2><p>Klinische Klarheit trifft Wasser-Licht: dezente WebGL-Kaustiken im Hero, Lichtreflexe am Cursor und Farbverläufe zwischen den Sektionen.</p><ul class="kw"><li>Instrument Sans/Serif</li><li>WebGL-Shader</li><li>Hallenbad-USP</li></ul><div class="links"><a class="btn" href="klinik-4-licht/index.html">Ansehen →</a><a class="btn ghost" href="klinik-4-licht/beckenboden.html">Beckenboden</a></div></div></article>
-      <article class="card"><div class="shot"><img src="assets/previews/k5.webp" width="1440" height="900" alt="Vorschau Klinik 5 Szenen" loading="lazy"></div><div class="body"><span class="num">KLINIK 05 · EXPERIMENT</span><h2>Szenen</h2><p>Erzählt wie eine Apple-Produktseite: bildschirmfüllende Kapitel, Text, der sich Wort für Wort aufhellt, und eine dunkle Wasser-Szene.</p><ul class="kw"><li>Geist</li><li>Sticky-Szenen</li><li>Storytelling</li></ul><div class="links"><a class="btn" href="klinik-5-szenen/index.html">Ansehen →</a><a class="btn ghost" href="klinik-5-szenen/beckenboden.html">Beckenboden</a></div></div></article>
+<body id="top">
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <!-- ===== Header + Messlinie ===== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top">
+        <img src="assets/logo/phit-logo-weiss.svg" width="44" height="43" alt="P.H.I.T – Physiotherapie und individuelles Training, zum Seitenanfang">
+        <span class="brand__txt label" aria-hidden="true"><strong>P.H.I.T</strong><span>Physiotherapie Innsbruck</span></span>
+      </a>
+      <nav class="nav label" aria-label="Hauptnavigation">
+        <ul>
+          <li><a href="#leistungen">Leistungen</a></li>
+          <li><a href="#wasser">Wasser</a></li>
+          <li><a href="beckenboden.html">Beckenboden</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#ablauf">Ablauf &amp; Kosten</a></li>
+          <li><a href="#anfahrt">Anfahrt</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="btn header-cta tabular" href="tel:+43512366002">0512 / 36 60 02</a>
+        <a class="icon-btn header-call" href="tel:+43512366002" aria-label="Anrufen: 0512 / 36 60 02"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 3.5h3l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.4 6.4l1.5-2.3 4.6 1.8v3a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 3.5 5.6a2 2 0 0 1 2-2.1z"/></svg></a>
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+          <svg class="i-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 8h18M3 16h18"/></svg>
+          <svg class="i-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
     </div>
-  </section>
-  <section class="wrap series" aria-labelledby="serie-1">
-    <p class="tag">Runde 1 · Fünf Richtungen</p>
-    <h2 id="serie-1" class="series-title">Die ersten fünf Design-Richtungen</h2>
-  </section>
-  <div class="wrap grid">
-    <article class="card">
-      <div class="shot"><img src="assets/previews/v1.webp" width="1440" height="900" alt="Vorschau Variante 1 Klinik" loading="lazy"></div>
-      <div class="body"><span class="num">VARIANTE 01</span><h2>Klinik</h2>
-        <p>Wie eine erstklassige Facharztpraxis: Weiß, Petrol, klares Raster und große, gut lesbare Schrift. Für Post-OP, ältere Patient:innen und Zuweiser.</p>
-        <div class="swatch" aria-hidden="true"><i style="background:#fff"></i><i style="background:#f3f7f9"></i><i style="background:#0a6a7e"></i><i style="background:#0f2a33"></i></div>
-        <ul class="kw"><li>vertrauenswürdig</li><li>Inter</li><li>kaum Animation</li></ul>
-        <div class="links"><a class="btn" href="variante-1-klinik/index.html">Ansehen →</a><a class="btn ghost" href="variante-1-klinik/beckenboden.html">Beckenboden</a></div></div>
-    </article>
-    <article class="card">
-      <div class="shot"><img src="assets/previews/v2.webp" width="1440" height="900" alt="Vorschau Variante 2 Modern" loading="lazy"></div>
-      <div class="body"><span class="num">VARIANTE 02</span><h2>Modern</h2>
-        <p>Swiss-Editorial mit riesiger Typografie, asymmetrischem Raster und Logo-Cyan als einziger Signalfarbe. Die modernste Praxis der Stadt.</p>
-        <div class="swatch" aria-hidden="true"><i style="background:#f1f0eb"></i><i style="background:#0b0b0b"></i><i style="background:#00b9ee"></i></div>
-        <ul class="kw"><li>editorial</li><li>Archivo Expanded</li><li>Mikro-Interaktionen</li></ul>
-        <div class="links"><a class="btn" href="variante-2-modern/index.html">Ansehen →</a><a class="btn ghost" href="variante-2-modern/beckenboden.html">Beckenboden</a></div></div>
-    </article>
-    <article class="card">
-      <div class="shot"><img src="assets/previews/v3.webp" width="1440" height="900" alt="Vorschau Variante 3 Motion" loading="lazy"></div>
-      <div class="body"><span class="num">VARIANTE 03</span><h2>Motion</h2>
-        <p>Eintauchen ins Hallenbad: dunkles Tiefsee-Design, Scroll-Inszenierung mit GSAP, Wellen, Ripple-Cursor und eine horizontale Leistungsgalerie.</p>
-        <div class="swatch" aria-hidden="true"><i style="background:#04141c"></i><i style="background:#0a2633"></i><i style="background:#00b9ee"></i><i style="background:#7fe3ff"></i></div>
-        <ul class="kw"><li>Hingucker</li><li>GSAP + Lenis</li><li>Wasser-Motiv</li></ul>
-        <div class="links"><a class="btn" href="variante-3-motion/index.html">Ansehen →</a><a class="btn ghost" href="variante-3-motion/beckenboden.html">Beckenboden</a></div></div>
-    </article>
-    <article class="card">
-      <div class="shot"><img src="assets/previews/v4.webp" width="1440" height="900" alt="Vorschau Variante 4 Alpin" loading="lazy"></div>
-      <div class="body"><span class="num">VARIANTE 04</span><h2>Alpin / Innsbruck Sport</h2>
-        <p>„Wir bringen dich zurück auf den Berg.“ Nordkette, Diagonalen, kondensierte Schrift, Return to Sport und Kreuzband-Reha im Fokus.</p>
-        <div class="swatch" aria-hidden="true"><i style="background:#13171a"></i><i style="background:#f4f6f7"></i><i style="background:#ff5a1f"></i><i style="background:#00b9ee"></i></div>
-        <ul class="kw"><li>sportlich</li><li>Barlow Condensed</li><li>lokal</li></ul>
-        <div class="links"><a class="btn" href="variante-4-alpin/index.html">Ansehen →</a><a class="btn ghost" href="variante-4-alpin/beckenboden.html">Beckenboden</a></div></div>
-    </article>
-    <article class="card">
-      <div class="shot"><img src="assets/previews/v5.webp" width="1440" height="900" alt="Vorschau Variante 5 Boutique" loading="lazy"></div>
-      <div class="body"><span class="num">VARIANTE 05</span><h2>Boutique / Wellbeing</h2>
-        <p>Warme Ruhe mit Sand, Salbei und eleganter Serif. Ganzheitlich gedacht, Beckenboden besonders einfühlsam, die WHO-Definition von Gesundheit als Leitgedanke.</p>
-        <div class="swatch" aria-hidden="true"><i style="background:#faf6f0"></i><i style="background:#efe6d8"></i><i style="background:#a3b09a"></i><i style="background:#2e5c63"></i></div>
-        <ul class="kw"><li>warm</li><li>Fraunces + Figtree</li><li>sanft</li></ul>
-        <div class="links"><a class="btn" href="variante-5-boutique/index.html">Ansehen →</a><a class="btn ghost" href="variante-5-boutique/beckenboden.html">Beckenboden</a></div></div>
-    </article>
+    <div class="meter" aria-hidden="true"><span class="meter__fill"></span><span class="meter__dot"></span><span class="meter__readout label" data-readout>§ 00 Ansicht</span></div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="wrap">
+      <nav aria-label="Mobile Navigation">
+        <ol>
+          <li><a class="mm-link" href="#leistungen"><span>02</span>Leistungen</a></li>
+          <li><a class="mm-link" href="#wasser"><span>03</span>Wasser</a></li>
+          <li><a class="mm-link" href="beckenboden.html"><span>05</span>Beckenboden</a></li>
+          <li><a class="mm-link" href="#team"><span>06</span>Team</a></li>
+          <li><a class="mm-link" href="#ablauf"><span>07</span>Ablauf &amp; Kosten</a></li>
+          <li><a class="mm-link" href="#anfahrt"><span>09</span>Anfahrt</a></li>
+          <li><a class="mm-link" href="#kontakt"><span>12</span>Kontakt</a></li>
+        </ol>
+      </nav>
+      <a class="btn" href="tel:+43512366002">Termin anrufen · <span class="tabular">0512 / 36 60 02</span></a>
+      <p class="mobile-menu__meta label">Amraser Straße 3, 1. Stock<br>im Städtischen Hallenbad Amras, 6020 Innsbruck<br><a href="mailto:info@phit.cc">info@phit.cc</a></p>
+    </div>
   </div>
-</main>
-<footer><div class="wrap"><span>Entwürfe für P.H.I.T – Physiotherapie und individuelles Training · Amraser Straße 3, 6020 Innsbruck</span><span>Platzhalter sind als [PLATZHALTER] markiert. Bildnachweise: assets/img/CREDITS.md</span></div></footer>
+
+  <main id="inhalt" tabindex="-1">
+
+    <!-- ===== § 00 Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title" data-section="§ 00 Ansicht">
+      <div class="hero__media">
+        <picture>
+          <source type="image/webp" srcset="img/gen/01-hallenbad-lichtlinie-640.webp 640w, img/gen/01-hallenbad-lichtlinie-1024.webp 1024w, img/gen/01-hallenbad-lichtlinie-1600.webp 1600w, img/gen/01-hallenbad-lichtlinie-2400.webp 2400w" sizes="100vw">
+          <img src="img/gen/01-hallenbad-lichtlinie-1024.jpg" width="2688" height="1520" alt="" fetchpriority="high" decoding="async">
+        </picture>
+        <video data-lazy muted playsinline loop preload="none" data-poster="img/gen/01-hallenbad-lichtlinie-1024.webp" aria-hidden="true" tabindex="-1">
+          <source data-src="video/hero-hallenbad.webm" type="video/webm">
+          <source data-src="video/hero-hallenbad.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="wrap">
+        <p class="hero__meta label" aria-hidden="true"><span>47.2650° N · 11.4029° E</span><span>Abb. 00 · Symbolbild, KI-generiert</span></p>
+        <p class="label" style="color:var(--cyan);margin-bottom:var(--sp-5)">Physiotherapie Innsbruck · Amras / Pradl</p>
+        <h1 class="display hero__title" id="hero-title">
+          <span class="line"><span>Genau</span></span>
+          <span class="line"><span>hinsehen.</span></span>
+          <span class="line line--accent"><span><em>Gezielt</em></span></span>
+          <span class="line line--accent"><span><em>bewegen</em><span class="dot" aria-hidden="true"></span></span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="lead hero__lead">Vier spezialisierte Physiotherapeut:innen begleiten dich nach Operationen und Verletzungen, bei Rückenschmerzen, Schwindel, im Sport und bei Beckenbodenbeschwerden – in unserer Praxis im Städtischen Hallenbad Amras.</p>
+          <div class="btn-row">
+            <a class="btn" href="tel:+43512366002"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 3.5h3l1.8 4.6-2.3 1.5a11.5 11.5 0 0 0 6.4 6.4l1.5-2.3 4.6 1.8v3a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 3.5 5.6a2 2 0 0 1 2-2.1z"/></svg>Termin · <span class="tabular">0512 / 36 60 02</span></a>
+            <a class="btn btn--ghost" href="#leistungen">Leistungen</a>
+          </div>
+          <ul class="hero__notes label">
+            <li>Mit ärztlicher Überweisung</li>
+            <li>Anteilige Rückerstattung durch deine Kasse</li>
+            <li>1. Stock links, Haupteingang Hallenbad</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 01 Protokoll ===== -->
+    <section class="section s-light" id="praxis" aria-labelledby="praxis-title" data-section="§ 01 Praxis">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 01</b> Praxis</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="praxis-title">Eine Praxis. <em>Vier Schwerpunkte.</em> Ein Hallenbad im selben Haus.</h2>
+          </div>
+        </div>
+        <ul class="protocol" data-reveal>
+          <li><span class="protocol__v tabular">320<small>m²</small></span><span class="protocol__k label">Praxisfläche</span></li>
+          <li><span class="protocol__v tabular">160<small>m²</small></span><span class="protocol__k label">Trainingsbereich</span></li>
+          <li><span class="protocol__v tabular">4</span><span class="protocol__k label">Spezialist:innen im Team</span></li>
+          <li><span class="protocol__v">H<sub style="font-size:.45em">2</sub>O</span><span class="protocol__k label">Unterwassertherapie im Hallenbad Amras</span></li>
+        </ul>
+        <div class="intro-grid">
+          <p class="label muted">Befund vor Behandlung</p>
+          <div class="prose" data-reveal>
+            <p class="lead">Jede Behandlung beginnt mit einer gründlichen Untersuchung. Erst wenn wir verstehen, woher deine Beschwerden kommen, planen wir gemeinsam die Therapie.</p>
+            <p style="margin-top:var(--sp-5)">Orthopädisch-traumatologische Physiotherapie, Sportphysiotherapie und Beckenbodentherapie – ergänzt um begleitetes Training auf 160 m² und Therapie im Wasser. So wirst du von der Person behandelt, die sich mit deinem Thema am besten auskennt.</p>
+          </div>
+          <figure class="fig" data-reveal="clip">
+            <div class="fig__frame ratio-3x2">
+              <picture>
+                <source type="image/webp" srcset="img/gen/14-goniometer-640.webp 640w, img/gen/14-goniometer-1024.webp 1024w, img/gen/14-goniometer-1600.webp 1600w" sizes="(min-width: 900px) 30vw, calc(100vw - 32px)">
+                <img src="img/gen/14-goniometer-1024.jpg" width="2048" height="1360" alt="Ein durchsichtiges Goniometer – ein Messinstrument für Gelenkwinkel – liegt auf hellem Leinen." loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <figcaption class="label"><span>Abb. 01 · Goniometer</span><span>KI-generiert</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 02 Leistungen: Register mit Vorschau ===== -->
+    <section class="section s-light" id="leistungen" aria-labelledby="leistungen-title" data-section="§ 02 Leistungen" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 02</b> Leistungen</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="leistungen-title">Was wir für dich <em>tun können</em></h2>
+            <p class="lead muted">Zehn Behandlungsformen, ein Register. Die Abbildungen sind Symbolbilder und zeigen nicht unsere Praxis.</p>
+          </div>
+        </div>
+
+        <div class="register">
+          <ol class="register__list">
+            <li class="reg" data-img="img/gen/03-haende-knie" data-cap="Abb. 02 · Mobilisation des Knies">
+              <span class="reg__no label">01</span>
+              <h3 class="reg__title">Mobilisierende Physiotherapie</h3>
+              <p class="reg__text">Gezielte manuelle Techniken, damit eingeschränkte Gelenke – Knie, Hüfte, Schulter – und die Wirbelsäule wieder beweglicher werden.</p>
+              <p class="reg__meta label">Manuelle Therapie · Maitland · Mulligan</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/03-haende-knie-640.webp 640w, img/gen/03-haende-knie-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/03-haende-knie-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/04-haende-nacken" data-cap="Abb. 03 · Behandlung von Nacken und Schulter">
+              <span class="reg__no label">02</span>
+              <h3 class="reg__title">Heilgymnastik &amp; Heilmassage</h3>
+              <p class="reg__text">Aktive Übungen und klassische Massage – abgestimmt auf deinen Befund und deinen Alltag, etwa bei Nacken- und Rückenbeschwerden.</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/04-haende-nacken-640.webp 640w, img/gen/04-haende-nacken-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/04-haende-nacken-1024.jpg" width="2048" height="1360" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/09-behandlungsraum" data-cap="Abb. 04 · Ruhiger Behandlungsraum">
+              <span class="reg__no label">03</span>
+              <h3 class="reg__title">Elektrotherapie</h3>
+              <p class="reg__text">Ergänzende Anwendung mit Reizstrom, etwa zur Unterstützung bei Schmerzen oder zur Muskelaktivierung.</p>
+            </li>
+            <li class="reg" data-img="img/gen/02-caustics-fliesen" data-cap="Abb. 05 · Lichtbrechung im Becken">
+              <span class="reg__no label">04</span>
+              <h3 class="reg__title"><a href="#wasser">Unterwassertherapie</a></h3>
+              <p class="reg__text">Bewegungstherapie im Wasser des Hallenbads Amras: Der Auftrieb entlastet die Gelenke.</p>
+              <p class="reg__meta label"><span class="tag">Direkt im Hallenbad Amras</span></p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/02-caustics-fliesen-640.webp 640w, img/gen/02-caustics-fliesen-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/02-caustics-fliesen-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/09-behandlungsraum" data-cap="Abb. 04 · Ruhiger Behandlungsraum">
+              <span class="reg__no label">05</span>
+              <h3 class="reg__title">Manuelle Lymphdrainage</h3>
+              <p class="reg__text">Sanfte Grifftechnik, die den Lymphabfluss anregt – zum Beispiel bei Schwellungen nach Operationen.</p>
+            </li>
+            <li class="reg" data-img="img/gen/08-bewegungsbahn" data-cap="Abb. 06 · Bewegungsbahn eines Schritts">
+              <span class="reg__no label">06</span>
+              <h3 class="reg__title"><a href="#sport">Sportphysiotherapie &amp; Return to Sport</a></h3>
+              <p class="reg__text">Von der Verletzung zurück ins Training: strukturierter Aufbau bis zum Return to Sport und Return to Running.</p>
+              <p class="reg__meta label">Simon Klein · Armin Hauser</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/08-bewegungsbahn-640.webp 640w, img/gen/08-bewegungsbahn-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/08-bewegungsbahn-1024.jpg" width="2688" height="1520" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/10-training-stillleben" data-cap="Abb. 07 · Kettlebell und Widerstandsband">
+              <span class="reg__no label">07</span>
+              <h3 class="reg__title">Medizinische Trainingstherapie</h3>
+              <p class="reg__text">Therapeutisch begleiteter Kraft- und Koordinationsaufbau auf 160 m² Trainingsfläche.</p>
+              <p class="reg__meta label">Simon Klein</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/10-training-stillleben-640.webp 640w, img/gen/10-training-stillleben-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/10-training-stillleben-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/11-balance-kugel" data-cap="Abb. 08 · Gleichgewicht">
+              <span class="reg__no label">08</span>
+              <h3 class="reg__title">Schwindel- &amp; Vestibulartherapie (IVRT®)</h3>
+              <p class="reg__text">Genaue Untersuchung und gezieltes Training bei Schwindel und Gleichgewichtsproblemen.</p>
+              <p class="reg__meta label">Simon Braun</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/11-balance-kugel-640.webp 640w, img/gen/11-balance-kugel-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/11-balance-kugel-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/06-wirbelsaeule-glas" data-cap="Abb. 09 · Wirbelsäule, Glasmodell">
+              <span class="reg__no label">09</span>
+              <h3 class="reg__title">Komplexe Rückenschmerzen (CFT)</h3>
+              <p class="reg__text">Cognitive Functional Therapy nach Prof. O’Sullivan: Schmerz, Bewegung und Alltag gemeinsam betrachten.</p>
+              <p class="reg__meta label">Simon Braun</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/06-wirbelsaeule-glas-640.webp 640w, img/gen/06-wirbelsaeule-glas-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/06-wirbelsaeule-glas-1024.jpg" width="1520" height="2688" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+            <li class="reg" data-img="img/gen/07-becken-porzellan" data-cap="Abb. 10 · Becken, Porzellanmodell">
+              <span class="reg__no label">10</span>
+              <h3 class="reg__title"><a href="beckenboden.html">Beckenbodenphysiotherapie</a></h3>
+              <p class="reg__text">Für Frauen und Männer – bei Inkontinenz, rund um Schwangerschaft und Geburt, vor und nach einer Prostata-OP. Diskret, mit eigener Spezialistin.</p>
+              <p class="reg__meta label"><span class="tag">Eigene Unterseite →</span> Anna Gassner, MSc</p>
+              <div class="reg__thumb"><picture><source type="image/webp" srcset="img/gen/07-becken-porzellan-640.webp 640w, img/gen/07-becken-porzellan-1024.webp 1024w" sizes="calc(100vw - 80px)"><img src="img/gen/07-becken-porzellan-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async"></picture></div>
+            </li>
+          </ol>
+
+          <figure class="fig register__preview" aria-hidden="true">
+            <div class="fig__frame">
+              <img src="img/gen/03-haende-knie-1024.webp" srcset="img/gen/03-haende-knie-640.webp 640w, img/gen/03-haende-knie-1024.webp 1024w, img/gen/03-haende-knie-1600.webp 1600w" sizes="38vw" width="1792" height="2240" alt="" loading="lazy" decoding="async" data-current="img/gen/03-haende-knie">
+            </div>
+            <figcaption class="label"><span data-preview-cap>Abb. 02 · Mobilisation des Knies</span><span>Symbolbild, KI</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 03 Wasser: gepinnte Szene, die Wasserlinie steigt beim Scrollen ===== -->
+    <section class="water" id="wasser" aria-labelledby="wasser-title" data-section="§ 03 Wasser">
+      <div class="water__stage">
+        <div class="water__media" aria-hidden="true">
+          <div class="water__level">
+            <picture>
+              <source type="image/webp" srcset="img/gen/12-unterwasser-640.webp 640w, img/gen/12-unterwasser-1024.webp 1024w, img/gen/12-unterwasser-1600.webp 1600w, img/gen/12-unterwasser-2400.webp 2400w" sizes="100vw">
+              <img src="img/gen/12-unterwasser-1024.jpg" width="2688" height="1520" alt="" loading="lazy" decoding="async">
+            </picture>
+            <video data-lazy muted playsinline loop preload="none" data-poster="img/gen/12-unterwasser-1024.webp" tabindex="-1">
+              <source data-src="video/loop-unterwasser.webm" type="video/webm">
+              <source data-src="video/loop-unterwasser.mp4" type="video/mp4">
+            </video>
+            <div class="water__scrim"></div>
+          </div>
+          <div class="water__line"><span class="label">Wasserlinie</span></div>
+        </div>
+        <div class="wrap water__copy">
+          <p class="sec-head__no label" style="margin-bottom:var(--sp-5)"><b>§ 03</b> Wasser</p>
+          <h2 class="h2" id="wasser-title">Therapie im Wasser&nbsp;– <em>weil unsere Praxis im Hallenbad liegt.</em></h2>
+          <p class="lead">Im Wasser trägt dich der Auftrieb. Das entlastet die Gelenke und macht Bewegungen möglich, die an Land noch schwerfallen. Unsere Praxis liegt direkt im Städtischen Hallenbad Amras – Therapie und Becken sind nur ein paar Schritte voneinander entfernt.</p>
+          <ul class="water__facts label">
+            <li>Unterwassertherapie</li>
+            <li>Auftrieb entlastet die Gelenke</li>
+            <li>Im selben Haus</li>
+          </ul>
+          <p class="label" style="margin-top:var(--sp-6);color:var(--mute-dark)">Abb. 11 · Unterwasseransicht, Symbolbild, KI-generiert</p>
+          <figure class="fig water__inset">
+            <div class="fig__frame ratio-4x5">
+              <picture>
+                <source type="image/webp" srcset="img/gen/02-caustics-fliesen-640.webp 640w, img/gen/02-caustics-fliesen-1024.webp 1024w" sizes="(min-width: 900px) 22vw, 60vw">
+                <img src="img/gen/02-caustics-fliesen-1024.jpg" width="1792" height="2240" alt="" loading="lazy" decoding="async">
+              </picture>
+              <video data-lazy muted playsinline loop preload="none" data-poster="img/gen/02-caustics-fliesen-640.webp" aria-hidden="true" tabindex="-1">
+                <source data-src="video/loop-caustics.webm" type="video/webm">
+                <source data-src="video/loop-caustics.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption class="label"><span>Abb. 11b · Licht am Beckenboden</span><span>KI</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 04 Sport: Gelenkmodell mit Annotation ===== -->
+    <section class="section s-dark" id="sport" aria-labelledby="sport-title" data-section="§ 04 Sport">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 04</b> Sport &amp; Return to Sport</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="sport-title">Zurück in den Sport&nbsp;– <em>Schritt für Schritt.</em></h2>
+          </div>
+        </div>
+        <div class="joint">
+          <figure class="fig joint__fig">
+            <div class="fig__frame">
+              <picture>
+                <source type="image/webp" srcset="img/gen/05-knie-glas-640.webp 640w, img/gen/05-knie-glas-1024.webp 1024w, img/gen/05-knie-glas-1600.webp 1600w" sizes="(min-width: 1024px) 46vw, calc(100vw - 32px)">
+                <img src="img/gen/05-knie-glas-1024.jpg" width="2048" height="2048" alt="Kniegelenk als leuchtendes Glasmodell: Oberschenkelknochen, Kniescheibe, Schienbein und Wadenbein." loading="lazy" decoding="async">
+              </picture>
+              <video data-lazy muted playsinline loop preload="none" data-poster="img/gen/05-knie-glas-1024.webp" aria-hidden="true" tabindex="-1">
+                <source data-src="video/loop-knie.webm" type="video/webm">
+                <source data-src="video/loop-knie.mp4" type="video/mp4">
+              </video>
+              <svg class="annot" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                <circle cx="430" cy="190" r="10"/><polyline pathLength="1" points="440,190 560,120 920,120"/><text x="920" y="104" text-anchor="end">Femur</text>
+                <circle cx="625" cy="300" r="10"/><polyline pathLength="1" points="635,300 720,250 920,250"/><text x="920" y="234" text-anchor="end">Patella</text>
+                <circle cx="470" cy="470" r="10"/><polyline pathLength="1" points="460,470 330,540 80,540"/><text x="80" y="524">Tibiaplateau</text>
+                <circle cx="385" cy="790" r="10"/><polyline pathLength="1" points="375,790 280,860 80,860"/><text x="80" y="844">Fibula</text>
+              </svg>
+            </div>
+            <figcaption class="label"><span>Abb. 12 · Kniegelenk, Glasmodell</span><span>KI-generiert</span></figcaption>
+          </figure>
+          <div>
+            <p class="lead" data-reveal>Nach einer Verletzung oder Operation begleiten wir dich vom ersten Bewegen bis zurück ins Training: mit genauer Untersuchung, manueller Therapie und gezieltem Aufbau im eigenen Trainingsbereich.</p>
+            <ol class="points" style="margin-top:var(--sp-6)" data-reveal>
+              <li>Konservative und post-OP Reha nach Kreuzbandriss</li>
+              <li>Sehnen-, Kapsel-/Band- und Muskelverletzungen</li>
+              <li>Return to Sport und Return to Running</li>
+              <li>Medizinische Trainingstherapie auf 160 m²</li>
+              <li>Laserbehandlung mit medizinischem Stablaser</li>
+            </ol>
+            <div class="persons" data-reveal>
+              <div class="persons__imgs"><img src="img/team-simon-klein-168.jpg" width="52" height="52" alt="" loading="lazy" decoding="async"><img src="img/team-armin-hauser-168.jpg" width="52" height="52" alt="" loading="lazy" decoding="async"></div>
+              <div><strong>Simon Klein &amp; Armin Hauser</strong><span>Sportphysiotherapie · European Sports Physiotherapy (ESP)</span></div>
+            </div>
+          </div>
+        </div>
+
+        <figure class="fig trace" data-reveal="clip">
+          <div class="fig__frame">
+            <picture>
+              <source type="image/webp" srcset="img/gen/08-bewegungsbahn-640.webp 640w, img/gen/08-bewegungsbahn-1024.webp 1024w, img/gen/08-bewegungsbahn-1600.webp 1600w, img/gen/08-bewegungsbahn-2400.webp 2400w" sizes="calc(100vw - 2 * var(--gutter))">
+              <img src="img/gen/08-bewegungsbahn-1024.jpg" width="2688" height="1520" alt="Langzeitbelichtung: cyanfarbene Lichtspuren zeichnen die geschwungene Bahn einer Bewegung über einem Messraster nach." loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <figcaption class="label"><span>Abb. 13 · Bewegungsbahn</span><span>KI-generiert</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== § 05 Beckenboden (Teaser zur Unterseite) ===== -->
+    <section class="section s-warm" id="beckenboden" aria-labelledby="bb-title" data-section="§ 05 Beckenboden">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 05</b> Schwerpunkt Beckenboden</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="bb-title">Beckenbodentherapie&nbsp;– <em>für Frauen und Männer.</em></h2>
+          </div>
+        </div>
+        <div class="pelvic">
+          <div class="pelvic__figs">
+            <figure class="fig" data-reveal="clip">
+              <div class="fig__frame ratio-4x5">
+                <picture>
+                  <source type="image/webp" srcset="img/gen/07-becken-porzellan-640.webp 640w, img/gen/07-becken-porzellan-1024.webp 1024w, img/gen/07-becken-porzellan-1600.webp 1600w" sizes="(min-width: 1024px) 26vw, 52vw">
+                  <img src="img/gen/07-becken-porzellan-1024.jpg" width="1792" height="2240" alt="Anatomisches Modell eines Beckens aus hellem Porzellan auf Leinen." loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="label"><span>Abb. 14 · Becken</span><span>KI</span></figcaption>
+            </figure>
+            <figure class="fig" data-reveal="clip">
+              <div class="fig__frame ratio-4x5">
+                <picture>
+                  <source type="image/webp" srcset="img/gen/13-beckenboden-haende-640.webp 640w, img/gen/13-beckenboden-haende-1024.webp 1024w" sizes="(min-width: 1024px) 21vw, 42vw">
+                  <img src="img/gen/13-beckenboden-haende-1024.jpg" width="1792" height="2240" alt="Zwei Hände liegen ruhig an Hüfte und unterem Rücken einer bekleideten Person in Seitenlage." loading="lazy" decoding="async">
+                </picture>
+              </div>
+              <figcaption class="label"><span>Abb. 15</span><span>KI</span></figcaption>
+            </figure>
+          </div>
+          <div>
+            <p class="lead" data-reveal>Die Beckenbodenmuskulatur stabilisiert deine Körpermitte und wirkt bei wichtigen Körperfunktionen mit. Beschwerden sind häufig – und du musst sie nicht einfach hinnehmen. Wir sprechen offen, diskret und in Ruhe darüber.</p>
+            <ol class="points points--2" style="margin-top:var(--sp-6)" data-reveal>
+              <li>Schwangerschaft &amp; Rückbildung</li>
+              <li>Verschiedene Formen der Inkontinenz</li>
+              <li>Senkungszustände</li>
+              <li>Vor &amp; nach Prostata-OP</li>
+              <li>Schmerzen beim Geschlechtsverkehr</li>
+              <li>Rektusdiastase</li>
+            </ol>
+            <div class="persons" data-reveal>
+              <div class="persons__imgs"><img src="img/team-anna-gassner-168.jpg" width="52" height="52" alt="" loading="lazy" decoding="async"></div>
+              <div><strong>Anna Gassner, MSc</strong><span>Physiotherapeutin mit Masterstudium in Beckenbodenphysiotherapie</span></div>
+            </div>
+            <div class="btn-row" style="margin-top:var(--sp-6)">
+              <a class="btn btn--ink" href="beckenboden.html">Mehr zur Beckenbodentherapie →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 06 Team (echte Porträts von phit.cc, Freigabe offen) ===== -->
+    <section class="section s-light" id="team" aria-labelledby="team-title" data-section="§ 06 Team">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 06</b> Team</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="team-title">Vier Spezialist:innen, <em>ein gemeinsamer Anspruch.</em></h2>
+            <p class="lead muted">Jede:r von uns hat eigene Schwerpunkte und Zusatzausbildungen.</p>
+          </div>
+        </div>
+        <div class="team">
+          <article class="member" aria-labelledby="m-anna">
+            <figure class="fig" data-reveal="clip"><div class="fig__frame member__photo">
+              <picture><source type="image/webp" srcset="assets/img/team-anna-gassner-640.webp 640w, assets/img/team-anna-gassner-960.webp 960w" sizes="(min-width: 1200px) 22vw, (min-width: 640px) 46vw, calc(100vw - 32px)"><img src="assets/img/team-anna-gassner-640.jpg" width="960" height="1200" alt="Porträt von Anna Gassner, MSc, Physiotherapeutin" loading="lazy" decoding="async"></picture>
+            </div></figure>
+            <h3 class="h3 member__name" id="m-anna">Anna Gassner, MSc</h3>
+            <p class="member__role label">Beckenbodenphysiotherapie (MSc)</p>
+            <blockquote class="member__quote"><p>„Ich begleite dich auf dem Weg, deinen eigenen Körper besser kennenzulernen und zu verstehen. Ich freue mich darauf, dir zu helfen, dein volles Potential auszuschöpfen.“</p></blockquote>
+            <p class="member__quals"><strong>Beckenbodenphysiotherapie (MSc)</strong> · Orthopädische &amp; traumatologische Rehabilitation · Blackroll-Trainerin · Faszienyoga · Therapieklettern · Manuelle Lymphdrainage</p>
+          </article>
+          <article class="member" aria-labelledby="m-armin">
+            <figure class="fig" data-reveal="clip"><div class="fig__frame member__photo">
+              <picture><source type="image/webp" srcset="assets/img/team-armin-hauser-640.webp 640w, assets/img/team-armin-hauser-960.webp 960w" sizes="(min-width: 1200px) 22vw, (min-width: 640px) 46vw, calc(100vw - 32px)"><img src="assets/img/team-armin-hauser-640.jpg" width="960" height="1200" alt="Porträt von Armin Hauser, Physiotherapeut" loading="lazy" decoding="async"></picture>
+            </div></figure>
+            <h3 class="h3 member__name" id="m-armin">Armin Hauser</h3>
+            <p class="member__role label">Sportphysiotherapie · ESP</p>
+            <blockquote class="member__quote"><p>„Sei die beste Version deiner selbst! Ich unterstütze dich mit all meiner Erfahrung und physiotherapeutischen Möglichkeiten!“</p></blockquote>
+            <p class="member__quals"><strong>European Sports Physiotherapy (ESP)</strong> · Manuelle Therapie nach Maitland · Fasziendistorsionsmodell (FDM) · PNF · Manuelle Lymphdrainage</p>
+          </article>
+          <article class="member" aria-labelledby="m-sklein">
+            <figure class="fig" data-reveal="clip"><div class="fig__frame member__photo">
+              <picture><source type="image/webp" srcset="assets/img/team-simon-klein-640.webp 640w, assets/img/team-simon-klein-960.webp 960w" sizes="(min-width: 1200px) 22vw, (min-width: 640px) 46vw, calc(100vw - 32px)"><img src="assets/img/team-simon-klein-640.jpg" width="960" height="1200" alt="Porträt von Simon Klein, Physiotherapeut" loading="lazy" decoding="async"></picture>
+            </div></figure>
+            <h3 class="h3 member__name" id="m-sklein">Simon Klein</h3>
+            <p class="member__role label">Sport &amp; Return to Sport</p>
+            <blockquote class="member__quote"><p>„Mich begeistert es besonders, deinen Körper genau unter die Lupe zu nehmen. Finden wir gemeinsam die Ursachen für deine Beschwerden und bringen dich zurück in einen beschwerdefreien Alltag oder Sport!“</p></blockquote>
+            <p class="member__quals"><strong>Sportphysiotherapie · Return to Sport / Running</strong> · Manuelle Therapie · Medizinische Trainingstherapie · Konservative &amp; post-OP Reha nach Kreuzbandriss · Sehnen-, Kapsel-/Band- &amp; Muskelverletzungen · Laserbehandlung mit med. Stablaser</p>
+          </article>
+          <article class="member" aria-labelledby="m-sbraun">
+            <figure class="fig" data-reveal="clip"><div class="fig__frame member__photo">
+              <picture><source type="image/webp" srcset="assets/img/team-simon-braun-640.webp 640w, assets/img/team-simon-braun-960.webp 960w" sizes="(min-width: 1200px) 22vw, (min-width: 640px) 46vw, calc(100vw - 32px)"><img src="assets/img/team-simon-braun-640.jpg" width="960" height="1200" alt="Porträt von Simon Braun, Physiotherapeut" loading="lazy" decoding="async"></picture>
+            </div></figure>
+            <h3 class="h3 member__name" id="m-sbraun">Simon Braun</h3>
+            <p class="member__role label">Schwindel &amp; Rücken</p>
+            <blockquote class="member__quote"><p>„Gezielt behandeln. Ganzheitlich denken. Moderne Physiotherapie mit Erfahrung und Empathie.“</p></blockquote>
+            <p class="member__quals"><strong>IVRT® Schwindel- &amp; Vestibulartherapie · CFT nach Prof. O’Sullivan</strong> · Orthopädische &amp; traumatologische Reha · Masterlehrgang Physiotherapie · Maitland-Zertifikat (IMTA) · Mulligan Concept · FDM · Manuelle Lymphdrainage</p>
+          </article>
+        </div>
+        <p class="team-note label">Porträts von phit.cc · <span class="placeholder">[BITTE PRÜFEN: Freigabe der Team-Fotos für die neue Seite]</span></p>
+      </div>
+    </section>
+
+    <!-- ===== § 07 Ablauf & Kosten ===== -->
+    <section class="section s-dark" id="ablauf" aria-labelledby="ablauf-title" data-section="§ 07 Ablauf">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 07</b> Ablauf &amp; Kosten</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="ablauf-title">In vier Schritten <em>zur Behandlung.</em></h2>
+            <p class="lead muted">Wir sind Wahltherapeut:innen. Das heißt: Du bezahlst die Behandlung bei uns und bekommst einen Teil davon von deiner Krankenkasse zurück.</p>
+          </div>
+        </div>
+        <ol class="steps">
+          <li class="step"><span class="step__no tabular" aria-hidden="true">1</span><div><p class="step__k label">Vor dem Termin</p><h3 class="h3">Überweisung mitbringen</h3><p>Lass dir von deiner Ärztin oder deinem Arzt eine Zuweisung zur Physiotherapie ausstellen.</p></div></li>
+          <li class="step"><span class="step__no tabular" aria-hidden="true">2</span><div><p class="step__k label">Kontakt</p><h3 class="h3">Termin vereinbaren</h3><p>Ruf uns an unter <a class="tabular" href="tel:+43512366002">0512 / 36 60 02</a> oder schreib an <a href="mailto:info@phit.cc">info@phit.cc</a>.</p></div></li>
+          <li class="step"><span class="step__no tabular" aria-hidden="true">3</span><div><p class="step__k label">In der Praxis</p><h3 class="h3">Behandlung</h3><p>Wir verrechnen Privattarife – es gibt keine Direktverrechnung mit der Kasse.</p></div></li>
+          <li class="step"><span class="step__no tabular" aria-hidden="true">4</span><div><p class="step__k label">Danach</p><h3 class="h3">Rückerstattung</h3><p>Reich die Rechnung bei deiner Krankenkasse ein und erhalte einen Teil der Kosten zurück.</p></div></li>
+        </ol>
+        <dl class="costs" data-reveal>
+          <div><dt class="label">Abrechnung</dt><dd>Privattarif, Wahltherapeut:innen<p>Keine Direktverrechnung mit der Krankenkasse.</p></dd></div>
+          <div><dt class="label">Tarif pro Einheit</dt><dd><span class="placeholder">[PLATZHALTER: Tarif pro Therapieeinheit]</span><p>Die genauen Tarife nennen wir dir gern am Telefon.</p></dd></div>
+          <div class="is-accent"><dt class="label">Rückerstattung</dt><dd>ca. 55 € pro Therapiestunde <span class="placeholder">[BITTE PRÜFEN]</span><p>Anteilig durch deine Kasse, laut bisherigen Angaben.</p></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== § 08 Räume (echte Fotos der Praxis) ===== -->
+    <section class="section s-light" id="raeume" aria-labelledby="raeume-title" data-section="§ 08 Räume">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 08</b> Räumlichkeiten</p>
+          <div class="sec-head__body">
+            <h2 class="h2" id="raeume-title">320 m² für Behandlung, <em>Training und Wasser.</em></h2>
+            <p class="lead muted">Ruhige Behandlungsräume, ein heller Trainingsbereich mit 160 m² und das Hallenbad im selben Haus.</p>
+          </div>
+        </div>
+        <div class="rooms">
+          <figure class="fig fig--main" data-reveal="clip">
+            <div class="fig__frame">
+              <picture>
+                <source type="image/webp" srcset="assets/img/trainingsraum-phit-640.webp 640w, assets/img/trainingsraum-phit-1024.webp 1024w, assets/img/trainingsraum-phit-1600.webp 1600w" sizes="(min-width: 900px) 62vw, calc(100vw - 32px)">
+                <img src="assets/img/trainingsraum-phit-1024.jpg" width="1600" height="908" alt="Der helle, 160 m² große Trainingsbereich von P.H.I.T mit Rundbogenfenstern, Kraftgeräten und Matten" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <figcaption class="label"><span>Abb. 16 · Trainingsbereich, 160 m²</span><span>Foto der Praxis</span></figcaption>
+          </figure>
+          <figure class="fig" data-reveal="clip">
+            <div class="fig__frame ratio-4x5">
+              <picture>
+                <source type="image/webp" srcset="img/gen/09-behandlungsraum-640.webp 640w, img/gen/09-behandlungsraum-1024.webp 1024w" sizes="(min-width: 900px) 30vw, calc(100vw - 32px)">
+                <img src="img/gen/09-behandlungsraum-1024.jpg" width="2048" height="1360" alt="" loading="lazy" decoding="async" style="object-position:30% 50%">
+              </picture>
+            </div>
+            <figcaption class="label"><span>Abb. 17 · Behandlungsraum</span><span>Symbolbild, KI</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 09 Anfahrt ===== -->
+    <section class="section s-light" id="anfahrt" aria-labelledby="anfahrt-title" data-section="§ 09 Anfahrt" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 09</b> Standort &amp; Anfahrt</p>
+          <div class="sec-head__body"><h2 class="h2" id="anfahrt-title">So findest du uns <em>im Hallenbad Amras.</em></h2></div>
+        </div>
+        <div class="location">
+          <div>
+            <dl class="info" data-reveal>
+              <div><dt class="label">Adresse</dt><dd>Amraser Straße 3, 1. Stock<br>6020 Innsbruck – im Städtischen Hallenbad Amras</dd></div>
+              <div><dt class="label">Eingang</dt><dd>Haupteingang Hallenbad, im 1. Stock links</dd></div>
+              <div><dt class="label">Parken</dt><dd>Gratis Parkplätze hinter dem Gebäude</dd></div>
+              <div><dt class="label">Öffis</dt><dd>Haltestelle „Leipziger Platz“</dd></div>
+              <div><dt class="label">Öffnungszeiten</dt><dd><span class="placeholder">[PLATZHALTER: Öffnungszeiten]</span></dd></div>
+              <div><dt class="label">Barrierefreiheit</dt><dd><span class="placeholder">[PLATZHALTER: Lift / barrierefreier Zugang]</span></dd></div>
+            </dl>
+            <div class="btn-row" style="margin-top:var(--sp-6)">
+              <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&amp;destination=Amraser+Stra%C3%9Fe+3+6020+Innsbruck" rel="noopener" target="_blank">Route planen ↗<span class="visually-hidden"> (öffnet Google Maps in neuem Fenster)</span></a>
+              <a class="btn btn--ghost" href="tel:+43512366002">Anrufen</a>
+            </div>
+          </div>
+          <figure class="fig">
+            <div class="map fig__frame">
+              <picture>
+                <source type="image/webp" srcset="assets/img/praxis-hallenbad-amras-640.webp 640w, assets/img/praxis-hallenbad-amras-1024.webp 1024w, assets/img/praxis-hallenbad-amras-1600.webp 1600w" sizes="(min-width: 1024px) 56vw, calc(100vw - 32px)">
+                <img src="assets/img/praxis-hallenbad-amras-1024.jpg" width="2560" height="1920" alt="Das Städtische Hallenbad Amras in Innsbruck mit der Nordkette im Hintergrund – hier liegt die Praxis im 1. Stock" loading="lazy" decoding="async">
+              </picture>
+              <div class="map__consent">
+                <h3>Karte anzeigen?</h3>
+                <p>Beim Laden der Karte werden Daten an Google übertragen. Mehr dazu in der <a href="datenschutz.html#maps">Datenschutzerklärung</a>.</p>
+                <button class="btn" type="button" data-map-load>Karte laden</button>
+              </div>
+            </div>
+            <figcaption class="label"><span>Abb. 18 · Städtisches Hallenbad Amras</span><span>Foto</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 10 Karriere ===== -->
+    <section class="section s-dark" id="karriere" aria-labelledby="karriere-title" data-section="§ 10 Karriere">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 10</b> Karriere · Raum zu vermieten</p>
+          <div class="sec-head__body"><h2 class="h2" id="karriere-title">Physiotherapie-Raum <em>für Selbstständige.</em></h2></div>
+        </div>
+        <div class="career">
+          <div>
+            <p class="lead">Du bist Physiotherapeut:in und möchtest selbstständig arbeiten – aber nicht allein? Bei uns bekommst du einen eigenen, ausgestatteten Therapieraum in einem interdisziplinären Team.</p>
+            <div class="btn-row" style="margin-top:var(--sp-6)">
+              <a class="btn" href="mailto:info@phit.cc?subject=Anfrage%20Therapieraum">Jetzt anfragen</a>
+              <a class="btn btn--ghost" href="tel:+43512366002">Anrufen</a>
+            </div>
+          </div>
+          <div class="career__cols">
+            <div>
+              <h3 class="label muted">Das erwartet dich</h3>
+              <ol class="points points--2">
+                <li>Freie Zeiteinteilung</li><li>Eigener, ausgestatteter Therapieraum</li><li>160 m² Trainingsraum</li><li>Bestehende Praxissoftware</li><li>Top-Lage: Öffis &amp; Gratisparkplätze</li><li>Bestehender Patientenstamm</li><li>Interdisziplinäres Arbeiten</li><li>Marketing-Unterstützung &amp; Listung auf der Website</li><li>Gemeinschaftsküche &amp; Pausenraum</li><li>WLAN</li>
+              </ol>
+            </div>
+            <div>
+              <h3 class="label muted">Was du mitbringst</h3>
+              <ol class="points">
+                <li>Abgeschlossene Ausbildung in Physiotherapie</li><li>Freude an der Selbstständigkeit</li><li>Anspruch an eine hochwertige Betreuung</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 11 FAQ ===== -->
+    <section class="section s-light" id="faq" aria-labelledby="faq-title" data-section="§ 11 Fragen">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 11</b> Häufige Fragen</p>
+          <div class="sec-head__body"><h2 class="h2" id="faq-title">Gut zu wissen <em>vor dem ersten Termin.</em></h2></div>
+        </div>
+        <div class="faq">
+          <p class="lead muted">Deine Frage ist nicht dabei? Ruf uns an – wir erklären dir alles in Ruhe.</p>
+          <div class="faq__list">
+            <details class="faq__item"><summary>Brauche ich eine ärztliche Überweisung?</summary><div class="faq__answer"><p>Ja, bitte bring eine ärztliche Zuweisung bzw. Überweisung zur Physiotherapie mit. Sie ist auch die Grundlage dafür, dass deine Krankenkasse einen Teil der Kosten rückerstattet.</p></div></details>
+            <details class="faq__item"><summary>Was zahlt die Krankenkasse?</summary><div class="faq__answer"><p>Wir sind Wahltherapeut:innen und verrechnen Privattarife – eine Direktverrechnung mit der Kasse gibt es nicht. Du reichst die Rechnung bei deiner Kasse ein und erhältst eine anteilige Rückerstattung, laut bisherigen Angaben ca. 55 € pro Therapiestunde <span class="placeholder">[BITTE PRÜFEN]</span>.</p></div></details>
+            <details class="faq__item"><summary>Wie vereinbare ich einen Termin?</summary><div class="faq__answer"><p>Am einfachsten telefonisch unter <a class="tabular" href="tel:+43512366002">0512 / 36 60 02</a> oder per E-Mail an <a href="mailto:info@phit.cc">info@phit.cc</a>.</p></div></details>
+            <details class="faq__item"><summary>Wo parke ich – und wie komme ich mit den Öffis hin?</summary><div class="faq__answer"><p>Hinter dem Gebäude des Hallenbads Amras gibt es gratis Parkplätze. Mit öffentlichen Verkehrsmitteln fährst du bis zur Haltestelle „Leipziger Platz“.</p></div></details>
+            <details class="faq__item"><summary>Wie finde ich die Praxis im Hallenbad?</summary><div class="faq__answer"><p>Geh durch den Haupteingang des Hallenbads und dann in den 1. Stock – die Praxis liegt dort links.</p></div></details>
+            <details class="faq__item"><summary>Ist Beckenbodentherapie auch etwas für Männer?</summary><div class="faq__answer"><p>Ja. Beckenbodenphysiotherapie ist für jeden Menschen wichtig – bei Männern zum Beispiel vor und nach einer Prostata-Operation (Prostatektomie, Adenomektomie). Mehr dazu auf unserer <a href="beckenboden.html">Seite zur Beckenbodentherapie</a>.</p></div></details>
+            <details class="faq__item"><summary>Brauche ich für Beckenbodentherapie eine eigene Überweisung?</summary><div class="faq__answer"><p>Nein, eine normale Überweisung zur Physiotherapie (z. B. PT03, Heilgymnastik) gilt auch für die Beckenbodentherapie. Sie wird wie jede andere Physiotherapie verrechnet.</p></div></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== § 12 Kontakt ===== -->
+    <section class="section s-dark" id="kontakt" aria-labelledby="kontakt-title" data-section="§ 12 Kontakt">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-head__no label"><b>§ 12</b> Kontakt</p>
+          <div class="sec-head__body"><h2 class="h2" id="kontakt-title">Termin <em>vereinbaren.</em></h2></div>
+        </div>
+        <div class="contact">
+          <div>
+            <p class="lead">Am schnellsten erreichst du uns telefonisch. Gern kannst du uns auch schreiben – wir melden uns bei dir.</p>
+            <a class="phone-big tabular" href="tel:+43512366002"><span class="label muted" style="display:block;margin-bottom:.75rem">Telefon</span>0512 / 36 60 02</a>
+            <ul class="contact__lines">
+              <li><a href="mailto:info@phit.cc">info@phit.cc</a></li>
+              <li>Amraser Straße 3, 1. Stock, 6020 Innsbruck<br><span class="muted">im Städtischen Hallenbad Amras</span></li>
+              <li><span class="placeholder">[PLATZHALTER: Öffnungszeiten / telefonische Erreichbarkeit]</span></li>
+            </ul>
+          </div>
+          <div class="form">
+            <h3 class="h3">Nachricht schreiben</h3>
+            <p>Bitte keine detaillierten Gesundheitsdaten per Formular – das besprechen wir persönlich.</p>
+            <form data-contact-form action="#" method="post" novalidate>
+              <div class="form-grid">
+                <div class="field"><label class="label" for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+                <div class="field"><label class="label" for="f-tel">Telefon (optional)</label><input id="f-tel" name="telefon" type="tel" autocomplete="tel" inputmode="tel"></div>
+                <div class="field full"><label class="label" for="f-mail">E-Mail</label><input id="f-mail" name="email" type="email" autocomplete="email" required></div>
+                <div class="field full"><label class="label" for="f-msg">Dein Anliegen</label><textarea id="f-msg" name="anliegen" required></textarea></div>
+                <div class="full"><label class="check" for="f-dsgvo"><input id="f-dsgvo" name="datenschutz" type="checkbox" required><span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden.</span></label></div>
+                <div class="full"><button class="btn" type="submit">Nachricht senden →</button></div>
+              </div>
+              <p class="form-status" role="status" tabindex="-1" hidden><span class="placeholder">[PLATZHALTER: Formular-Backend]</span> – es wird derzeit nichts versendet. Bitte vorerst anrufen (<a href="tel:+43512366002">0512 / 36 60 02</a>) oder an <a href="mailto:info@phit.cc">info@phit.cc</a> schreiben.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer__big" aria-hidden="true"></p>
+      <div class="footer__grid">
+        <div>
+          <img src="assets/logo/phit-logo-weiss.svg" width="64" height="63" alt="P.H.I.T – Physiotherapie und individuelles Training" loading="lazy">
+          <p style="margin-top:var(--sp-4);max-width:36ch">Physiotherapie und individuelles Training in Innsbruck – orthopädisch-traumatologisch, sportphysiotherapeutisch und im Beckenboden spezialisiert.</p>
+        </div>
+        <div>
+          <h2 class="label">Praxis</h2>
+          <address>Amraser Straße 3, 1. Stock<br>6020 Innsbruck<br>im Städtischen Hallenbad Amras</address>
+          <p style="margin-top:var(--sp-4)">Öffnungszeiten:<br><span class="placeholder">[PLATZHALTER: Öffnungszeiten]</span></p>
+        </div>
+        <div>
+          <h2 class="label">Übersicht</h2>
+          <ul class="footer__links">
+            <li><a href="#leistungen">Leistungen</a></li>
+            <li><a href="beckenboden.html">Beckenboden</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#ablauf">Ablauf &amp; Kosten</a></li>
+            <li><a href="#karriere">Raum zu vermieten</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="label">Kontakt</h2>
+          <ul class="footer__links">
+            <li><a class="tabular" href="tel:+43512366002">+43 512 366002</a></li>
+            <li><a href="mailto:info@phit.cc">info@phit.cc</a></li>
+            <li><a href="https://www.facebook.com/Phitibk" rel="noopener" target="_blank">Facebook ↗</a></li>
+            <li><a href="https://www.instagram.com/phit_innsbruck" rel="noopener" target="_blank">Instagram ↗</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom label">
+        <p>© <span data-year>2026</span> P.H.I.T · Bilder mit „KI“ sind Symbolbilder</p>
+        <ul><li><a href="impressum.html">Impressum</a></li><li><a href="datenschutz.html">Datenschutz</a></li></ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="callbar"><a class="btn" href="tel:+43512366002">Termin anrufen · <span class="tabular">0512 / 36 60 02</span></a></div>
 </body>
 </html>

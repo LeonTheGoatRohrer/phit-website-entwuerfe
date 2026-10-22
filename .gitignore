@@ -3,3 +3,8 @@ _tmp/
 assets/img/_original/
 phit-masterprompt-claude-code.md
 *.log
+
+# Variante 6: Rohdateien der Generierung (PNG/MP4 in voller Auflösung) lokal halten
+img/gen/_src/
+video/_src/
+img/gen/_verworfen/*.png
