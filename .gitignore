@@ -3,3 +3,11 @@ _tmp/
 assets/img/_original/
 phit-masterprompt-claude-code.md
 *.log
+
+# Local preview and credentials
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+__pycache__/
